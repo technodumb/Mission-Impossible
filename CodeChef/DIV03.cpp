@@ -19,3 +19,5 @@ int main(){
         }
     }
 }
+// @technodumb is smarter
+
