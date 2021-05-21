@@ -13,7 +13,7 @@ int main(){
             cin>>spr>>rating;               //Inputting the space required by the movie and its imdb rating
             if(spr <= x && rating > max)    // Checking if the movie fits in the harddisk 
                                             // and if the rating of the current movie is more than the maximum as of yet
-                max = rating;               //If you found a movie that fits in, store its rating in max, for future comparision.
+                max = rating;              //If you found a movie that fits in, store its rating in max, for future comparision.
         }
         cout<<max<<endl;
     }
