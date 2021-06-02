@@ -5,11 +5,18 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        int n, speed[n], min;
+        long long int n, min, speed, nomax = 1;
         cin>>n;
-        for(int i=0;i<n;i++){
-            cin>>speed[i];
+        cin>>speed;
+        min = speed;
+        for(int i=0;i<n-1;i++){
+            cin>>speed;
+            if(speed<=min){
+                min = speed;
+                nomax++;
+            }
         }
+        cout<<nomax<<endl;
     }
 
     return 0;
