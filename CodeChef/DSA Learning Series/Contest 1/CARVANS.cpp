@@ -2,6 +2,9 @@
 using namespace std;
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cout.tie(NULL);
+    cin.tie(NULL);
     int t;
     cin>>t;
     while(t--){
@@ -16,7 +19,7 @@ int main(){
                 nomax++;
             }
         }
-        cout<<nomax<<endl;
+        cout<<nomax<<"\n";
     }
 
     return 0;
