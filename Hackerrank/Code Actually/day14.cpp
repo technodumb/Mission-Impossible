@@ -1,6 +1,6 @@
 #include<iostream>
-
 using namespace std;
+
 int main(){
     int t;
     cin>>t;
@@ -16,6 +16,7 @@ int main(){
                     vary--;
                 count++;
             }
+
         if(vary==0)
             cout<<count/2;
         else
