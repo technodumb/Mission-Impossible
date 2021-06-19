@@ -8,7 +8,7 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        long long int n, a, b, sum, mod;
+        long long int n, a, b, sum, mod, times;
         bool flag = false;
         cin>>n>>a>>b;
         if(n<=3){
@@ -18,10 +18,22 @@ int main(){
         else{
             n-=3;
             sum=2*(a+b);
-            while(sum%10!=6)
-                
+            times = n/4;
+            n%=4;
+            mod = sum%10;
+            while(n--){
+                sum += mod%3;
+                mod = (2*mod)%10;
+            }
+            sum%=3;
+            sum = (sum+times*2)%3;
+            if(sum==0)
+                flag = true;
         }
-            
+        if(flag)
+            cout<<"YES\n";
+        else
+            cout<<"NO\n";           
     }
 
     return 0;
