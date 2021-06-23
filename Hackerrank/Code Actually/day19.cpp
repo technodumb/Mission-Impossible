@@ -18,7 +18,8 @@ int main() {
             cout<<"SARTHAK";
         else if(sar == anu)
             cout<<"DRAW";
-        else cout<<"ANURADHA";
+        else 
+            cout<<"ANURADHA";
         cout<<"\n";
     }
     return 0;
