@@ -4,5 +4,4 @@ for _ in range(int(input())):
         num = '10' + num[1:]
     else:
         num = '1' + num
-    
     print(num)
