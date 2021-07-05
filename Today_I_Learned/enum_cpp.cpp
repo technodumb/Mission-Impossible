@@ -1,8 +1,9 @@
 #include<iostream>
 using namespace std;
-enum {A=32, B, C};
 
 int main(){
-    cout<<A<<B<<C;
+    int i = 2;
+    int c = i+(2,3,4,5,6,7,8);
+    cout<<c;
     return 0;
 }
